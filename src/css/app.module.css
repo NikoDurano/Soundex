@@ -1,0 +1,134 @@
+/* App Css */
+
+.mainCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.darkMode {
+  color: white;
+  background-color: black;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  position: absolute;
+  top: 95px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "inputs inputs2"
+    "submit submit";
+  font-size: 2rem;
+}
+
+.submit,
+.similar,
+input {
+  font-size: 2rem;
+}
+
+.inputs,
+.inputs2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.inputs {
+  grid-area: inputs;
+}
+
+.inputs2 {
+  grid-area: inputs2;
+}
+
+.inputs input, .inputs2 input {
+
+  width: 17rem;
+  margin: 1rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+
+.submit {
+  grid-area: submit;
+
+  height: 4rem;
+  width: 10rem;
+  margin: auto;
+
+  border-radius: 10px;
+}
+
+
+.buttonGroup {
+  bottom: 0;
+  position: absolute;
+}
+
+.buttonGroup button {
+  font-size: 2rem;
+  background-color: transparent;
+  border: transparent;
+  margin: 1rem;
+}
+
+.buttonGroup button:hover {
+  cursor: pointer;
+  color: rgb(96, 96, 96);
+}
+
+
+.nameCon {
+  grid-area: name;
+
+}
+
+.soundexCon {
+  grid-area: soundex;
+  text-align: center;
+}
+
+.simCon {
+  grid-area: sim;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.setCon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    'name soundex sim'
+    'name soundex sim'
+    'name soundex sim'
+    'name soundex sim';
+}
+
+
+/* Dark Mode */
+.darkButton {
+  color: white;
+}
+
+.darkModal {
+  background-color: #212121 !important;
+  color: white;
+}
