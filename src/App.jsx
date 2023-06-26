@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./css/app.module.css";
-import Infomation from "./components/information.jsx";
+import Infomation from "./components/Information.jsx";
 
 import { useState } from "react";
 
